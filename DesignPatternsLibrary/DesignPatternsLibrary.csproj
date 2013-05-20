@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{890AAC5D-0E60-49DA-B6AF-729992DFB66E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DesignPatternsLibrary</RootNamespace>
+    <AssemblyName>DesignPatternsLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AgilePrinciples\Visitor\Modems\ErnieModem.cs" />
+    <Compile Include="AgilePrinciples\Visitor\Modems\HayesModem.cs" />
+    <Compile Include="AgilePrinciples\Visitor\Modems\Modem.cs" />
+    <Compile Include="AgilePrinciples\Visitor\Modems\ModemVisitor.cs" />
+    <Compile Include="AgilePrinciples\Visitor\Modems\ZoomModem.cs" />
+    <Compile Include="AgilePrinciples\Visitor\Configurator\UnixModemConfigurator.cs" />
+    <Compile Include="CSharpDesignPatternsATutorial\Visitor\Boss.cs" />
+    <Compile Include="CSharpDesignPatternsATutorial\Visitor\Employee.cs" />
+    <Compile Include="CSharpDesignPatternsATutorial\Visitor\IVisitor.cs" />
+    <Compile Include="CSharpDesignPatternsATutorial\Visitor\VacationAccumulator.cs" />
+    <Compile Include="OReillyCSharp30DesignPatterns\Visitor\Visitors\CountVisitor.cs" />
+    <Compile Include="OReillyCSharp30DesignPatterns\Visitor\Elements\Element.cs" />
+    <Compile Include="OReillyCSharp30DesignPatterns\Visitor\Elements\ElementWithLink.cs" />
+    <Compile Include="OReillyCSharp30DesignPatterns\Visitor\Elements\IElement.cs" />
+    <Compile Include="OReillyCSharp30DesignPatterns\Visitor\Elements\IVisitor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TutsPlus\Visitor\PaymentDataModifers\HtmlPaymentDetails.cs" />
+    <Compile Include="TutsPlus\Visitor\PaymentMethods\PaymentDataModifier.cs" />
+    <Compile Include="TutsPlus\Visitor\PaymentMethods\PaypalPayment.cs" />
+    <Compile Include="TutsPlus\Visitor\PaymentDataModifers\PaymentMethod.cs" />
+    <Compile Include="TutsPlus\Visitor\PaymentDataModifers\SimplePaymentDetails.cs" />
+    <Compile Include="TutsPlus\Visitor\PaymentMethods\VisaPayment.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
